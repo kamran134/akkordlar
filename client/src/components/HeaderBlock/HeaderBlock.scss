@@ -1,0 +1,16 @@
+.header-block {
+    background-size: 100%;
+    height: 170px;
+    line-height: 170px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #717070;
+    display: flex;
+    
+    &__center {
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+

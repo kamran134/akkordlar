@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Заголовок 1",
+        "createAt": "6 июня, 2019",
+        "_id": "1",
+        "onRemove": "aaa"
+    },
+    {
+        "title": "Заголовок 2",
+        "createAt": "7 июня, 2019",
+        "_id": "2",
+        "onRemove": "aaa"
+    },
+    {
+        "title": "Заголовок 3",
+        "createAt": "8 июня, 2019",
+        "_id": "3",
+        "onRemove": "aaa"
+    }
+]
