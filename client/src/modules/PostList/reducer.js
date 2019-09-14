@@ -17,6 +17,10 @@ export default (state = initialState, action) => {
             ...state,
             items: state.items.filter(item => item._id !== payload)
         }
+        case 'POST:ADD_ITEM': return {
+            ...state,
+            items: [...payload]
+        }
         default: return state;
     }
 }

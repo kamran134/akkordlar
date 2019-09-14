@@ -28,6 +28,18 @@ const PostListActions = {
             dispatch(PostListActions.removeItem(id));
             postsApi.remove(id);
         }
+    },
+    addItem: (items) => ({
+        type: 'POST:ADD_ITEM',
+        payload: items
+    }),
+    fetchAddItem: (post) => dispatch => {
+        if (global.confirm('Are you sure to add?')) {
+            postsApi.postTest(post).then(() => postsApi.get()).then((posts) => {
+                console.log('posts', posts);
+                dispatch(PostListActions.addItem(posts.data))
+            });
+        }
     }
 }
 

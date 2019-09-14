@@ -2,3 +2,7 @@ node_modules
 .babelrc
 package-lock.json
 yarn.lock
+./client/node_modules
+./client/yarn-error.log
+./client/build
+./client/package-lock.json
